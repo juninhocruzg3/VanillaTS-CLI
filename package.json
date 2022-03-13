@@ -1,0 +1,16 @@
+{
+  "name": "vanilla-ts",
+  "version": "0.0.1",
+  "description": "The VanillaTS CLI to make easier your web development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "juninhocruzg3",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.0.0",
+    "conf": "^10.1.1"
+  }
+}
