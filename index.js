@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 import { Command } from 'commander';
 import { newProject } from './commands/new.js';
+import { serve } from './commands/serve.js';
 import { version } from './commands/version.js';
 
 const program = new Command();
@@ -22,5 +23,11 @@ program
 	.argument('<name>', 'The name of the new workspace and initial project.')
 	.description('Creates a new VanillaTS workspace. 	[alias: n]')
 	.action(newProject);
+
+program
+	.command('serve')
+	.alias('s')
+	.description('Serve application. 	[alias: s]')
+	.action(serve);
 
 program.parse();
